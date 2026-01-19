@@ -5,7 +5,7 @@ name = "demo_rust_loco"
 version = "0.1.0"
 edition = "2021"
 publish = false
-default-run = "demo_rust_loco-cli"
+default-run = "demo-rust-loco-cli"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -33,7 +33,7 @@ sea-orm = { version = "1.1", features = [
 ] }
 chrono = { version = "0.4" }
 validator = { version = "0.20" }
-uuid = { version = "1.19", features = ["v4"] }
+uuid = { version = "1.20", features = ["v4"] }
 include_dir = { version = "0.7" }
 # view engine i18n
 fluent-templates = { version = "0.13", features = ["tera"] }
@@ -42,7 +42,7 @@ unic-langid = { version = "0.9" }
 axum-extra = { version = "0.10", features = ["form"] }
 
 [[bin]]
-name = "demo_rust_loco-cli"
+name = "demo-rust-loco-cli"
 path = "src/bin/main.rs"
 required-features = []
 
